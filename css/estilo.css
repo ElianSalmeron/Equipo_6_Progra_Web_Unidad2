@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=RocknRoll+One&display=swap');
+@import url("menu.css");
+
+body {
+    margin: 0;
+    background-color: rgb(182, 182, 182);
+}
+
+.topnav a{font-family: 'Open Sans', sans-serif;}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #152A38;}
+
+ul.topnav li a.active {background-color: #587FFC;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+.contenedor, .contenedor1{
+    width: 100%;
+    margin: auto;
+}
+
+footer{
+    margin-top: 0px;
+}
+
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    background-color: #333;
+    color: white;
+}
+
+
+footer .contenedor1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    background-color: #333;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+#music h2{
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'RocknRoll One', sans-serif;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 30px;
+    background-color: #726EFF;
+    color: white;
+}
+
+#music h3{
+    font-family: 'RocknRoll One', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    margin: 2px;
+    padding-bottom: 5px;
+}
+
+#music .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(182, 182, 182);
+    padding-bottom: 10px rgb(182, 182, 182);
+}
+
+#music article{
+    text-align: center;
+    margin: 15px;
+}
+
+#music img{
+    margin: 10px;
+    width: 90%;
+    max-width: 300px;
+    height: 75%;
+}
+
+#music video{
+    margin-top: 0px;
+    width: 420px;
+    max-width: 500px;
+    height: 380px;
+}
+
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    height: 400%;
+
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-in;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}

@@ -1,0 +1,8 @@
+#music img{
+    width: 300px;
+    height: 325px;
+}
+
+ul.topnav li a.help {background-color: #587FFC;}
+ul.topnav li a.active {background-color: #333;}
+ul.topnav li a.active:hover {background-color: #152A38;}
